@@ -6,7 +6,7 @@
 
 Dự án này là phần demo mã nguồn thuộc báo cáo bài tập lớn của **Nhóm 13**. Chúng tôi cài đặt thuật toán **Binary Grey Wolf Optimization (BGWO)** để giải quyết các bài toán tối ưu hóa trong không gian rời rạc (0 và 1).
 
-[cite_start]Khác với GWO gốc hoạt động trên không gian liên tục, phiên bản này sử dụng **Hàm chuyển đổi (Transfer Function)** để biến đổi các giá trị thực thành xác suất, từ đó cập nhật vị trí của sói thành 0 hoặc 1.
+Khác với GWO gốc hoạt động trên không gian liên tục, phiên bản này sử dụng **Hàm chuyển đổi (Transfer Function)** để biến đổi các giá trị thực thành xác suất, từ đó cập nhật vị trí của sói thành 0 hoặc 1.
 
 ### Thông tin nhóm thực hiện (Team Members)
 | STT | Họ và tên | MSSV | Vai trò |
@@ -21,13 +21,13 @@ Dự án này là phần demo mã nguồn thuộc báo cáo bài tập lớn c�
 Mã nguồn được cài đặt dựa trên các lý thuyết đã trình bày trong báo cáo:
 
 * **Thuật toán:** Binary Grey Wolf Optimization (BGWO).
-* [cite_start]**Hàm chuyển đổi (Transfer Function):** Sử dụng hàm **Sigmoid (S-shaped)**.
-    * [cite_start]Công thức: $T(x) = \frac{1}{1+e^{-10(x-0.5)}}$.
-    * [cite_start]Cơ chế: Hàm này buộc các giá trị di chuyển về cực (0 hoặc 1) một cách mềm mại.
+* **Hàm chuyển đổi (Transfer Function):** Sử dụng hàm **Sigmoid (S-shaped)**.
+    * Công thức: $T(x) = \frac{1}{1+e^{-10(x-0.5)}}$.
+    * Cơ chế: Hàm này buộc các giá trị di chuyển về cực (0 hoặc 1) một cách mềm mại.
 * **Quy tắc cập nhật vị trí:**
     * Nếu $rand < T(x^d)$ $\rightarrow$ Vị trí mới = 1.
-    * [cite_start]Ngược lại $\rightarrow$ Vị trí mới = 0.
-* **Bài toán Demo:** OneMax Problem (Tìm chuỗi nhị phân có tổng giá trị lớn nhất). [cite_start]Đây là bài toán cơ sở đại diện cho các bài toán phức tạp hơn như *Feature Selection*.
+    * Ngược lại $\rightarrow$ Vị trí mới = 0.
+* **Bài toán Demo:** OneMax Problem (Tìm chuỗi nhị phân có tổng giá trị lớn nhất). Đây là bài toán cơ sở đại diện cho các bài toán phức tạp hơn như *Feature Selection*.
 
 ---
 
